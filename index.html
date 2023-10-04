@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Timer</title>
+</head>
+<body>
+    <!-- <h1>Run a timer !</h1> -->
+    <div id="divTitle">
+    <h1 id="title">~ Timer ~</h1>
+    </div>
+    <div class="container">
+        <div>
+            <div class="divBox" id="divHours">0</div>
+            <h1 class="h1Time">HOURS</h1>
+        </div>
+        <div>
+            <div class="divBox" id="divMinutes">0</div>
+            <h1 class="h1Time">MINUTES</h1>
+        </div>
+        <div>
+            <div class="divBox" id="divSeconds">0</div>
+            <h1 class="h1Time">SECONDS</h1>
+        </div>
+    </div>
+
+    <div id="divInputs">
+        <div >
+        <input id="inputHours" class="inputTime" placeholder=" hh" type="text">
+        </div>
+        <div >
+        <input id="inputMinutes" class="inputTime" placeholder=" mm" type="text">
+        </div>
+        <div >
+        <input id="inputSeconds" class="inputTime" placeholder=" ss" type="text">
+        </div>
+    </div>
+    <div id="divBtn">
+    <button id="startTheTimer" class="buttons" onclick="setTheValues()">Start The Timer!</button>
+    <button id="stopTheTimer" class="buttons" onclick="stopTheClock()">Stop The Timer</button>
+    <button id="zeroTheNumbers" class="buttons" onclick="zeroTheTimer()">Zero The Timer</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
